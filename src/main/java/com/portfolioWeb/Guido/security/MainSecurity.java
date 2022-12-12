@@ -1,10 +1,10 @@
 
+
 package com.portfolioWeb.Guido.security;
 
 import com.portfolioWeb.Guido.security.jwt.JwtEntryPoint;
 import com.portfolioWeb.Guido.security.jwt.JwtTokenFilter;
 import com.portfolioWeb.Guido.security.service.UserDetailServiceImpl;
-import javax.annotation.security.PermitAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -60,6 +60,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
     }
     
     @Bean
+ 
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean(); 
